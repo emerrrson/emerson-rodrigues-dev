@@ -1,44 +1,137 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emerson Rodrigues - Dev </title>
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-
+    <style>
+        
+    </style>
 </head>
 <body>
     <header>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sobre mim</a></li>
-                <li><a href="#projetos"> Projetos </a></li>
-                <li><a href="#contato"> Contato </a></li>
+                <li><a href="#sobre-mim">Sobre Mim</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
+    
     <main>
-        <section id="home">
+        <section id="home" class="secao-animada">
             <div class="texto-home">
-                <h2>Olá, eu sou o Emerson</h2>
+                <h2>Olá, Eu sou o Emerson</h2>
                 <p>Sou um desenvolvedor apaixonado por tecnologia e criação de interfaces interativas. Sempre buscando aprender e evoluir.</p>
+                <p>Tecnologias que utilizo: </p>
                 <div class="tecnologias">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" alt="HTML">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" alt="CSS"> 
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="Javascript">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" alt="CSS">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg" alt="Bootstrap">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React">
                 </div>
             </div>
-            <img  src="imagens/emerson-3.png"  alt="Foto de Emerson" class="imagem-dinamica" id="imagemDinamica">
+            <img src="imagens/emerson-3.png" alt="Foto de Emerson" class="imagem-dinamica" id="imagemDinamica">
+            
         </section>
-        <section id="sobre">
+        <section id="sobre-mim" class="sobre-mim secao-animada">
+            <h2> Sobre Mim </h2>
+            <div class="container-sobre">
+                <div class="bio">
+                    <p>
+                        Me chamo Emerson tenho 25 anos e sou apaixonado por tecnologia, desde pequeno quando jogava vídeo-game não só curtia o game como sempre quis entender como que funcionava por trás de tudo aquilo que os desenvolvedores faziam.
+                        Comecei meus estudos com HTML e CSS e me aprofundei em JavaScript, Bootstrap e React. É muito bom criar um layout novo, mas melhor ainda é aproveitar cada detalhe do processo e é isso que me faz gostar ainda mais de tecnologia.
+                        Estou sempre em busca de novos desafios e evolução constante como Dev. 🚀
+                    </p>
+                    <ul>
+                        <li><strong>Cidade:</strong> São Paulo 🏠 </li>
+                        <li><strong>Idade:</strong> 25 anos 🎂 </li>
+                        <li><strong>Interesses:</strong> Front-end e Back-end 🎯</li>
+                    </ul>
+                </div>
+                <div class="foto-sobre">
+                    <img src="imagens/emerson-1.png" alt="Foto Emerson desenho animado" class="imagem-sobre">
+                </div>
+            </div>
+            </section>
 
-        </section>
-    
+            <div id="projetos-anchor" class="ajuste-ancora" ></div>
+            
+            <section id="projetos" class="projetos secao-animada">
+                <h2>Meus Projetos</h2>
+            
+                <div class="cards-projetos carrossel" id="carrosselProjetos">
+                    <div class="card">
+                        <img src="imagens/degustação-divina.png" alt="Site Degustação Divina">
+                        <h3>Degustação Divina</h3>
+                        <p> Website de restaurante responsivo.</p>
+                        <h4>Tecnologias utilizadas para desenvolver:</h4>
+                        <div class="tecnologias-usadas">
+                            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" alt="HTML"></span>
+                            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" alt="CSS"></span>
+                            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg" alt="Bootstrap"></span>
+                        </div>
+                        <div class="botoes">
+                            <a href="https://github.com/emerrrson/degustacao_divina" target="_blank" >Github</a>
+                            <a href="https://degustacao-divina-il37dz27e-emerrrson.vercel.app/" target="_blank" >Site</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="imagens/siga-o-som.png" alt="Site Siga o Som">
+                        <h3>Siga o Som</h3>
+                        <p> Website de Loja de instrumentos. </p>
+                        <h4>Tecnologias utilizadas para desenvolver:</h4>
+                        <div class="tecnologias-usadas">
+                            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" alt="HTML"></span>
+                            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" alt="CSS"></span>
+                        </div>
+                        <div class="botoes">
+                            <a href="https://github.com/emerrrson/siga_o_som" target="_blank" >Github</a>
+                            <a href="https://siga-o-som.vercel.app/#sobre-a-loja" target="_blank" >Site</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="imagens/flowerish-shop.png" alt="Site Flowerish Shop">
+                        <h3>Flowerish Shop</h3>
+                        <p> Website de Loja de Flores. </p>
+                        <h4>Tecnologias utilizadas para desenvolver:</h4>
+                        <div class="tecnologias-usadas">
+                            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" alt="HTML"></span>
+                            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" alt="CSS"></span>
+                        </div>
+                        <div class="botoes">
+                            <a href="https://github.com/emerrrson/flowers_shop" target="_blank" >Github</a>
+                            <a href="https://flowers-shop-j2pvl0hhe-emerrrson.vercel.app/" target="_blank">Site</a>
+                        </div>
+                    </div>
+
+                
+                </div>
+            
+            </section>
+            <section id="contato" class="contato secao-animada">
+                <h2 class="entre-em-contato">Entre em Contato </h2>
+                <p>👇 Entre em contato comigo pelas redes abaixo 👇</p>
+                <div class="redes-sociais">
+                    <a href="https://github.com/emerrrson" target="_blank">
+                        <img src="/imagens/github-brands.svg" alt="GitHub">  
+                    </a>
+                    <a href="https://www.linkedin.com/in/emerson-rodrigues-7610151b4/" target="_blank">
+                        <img src="/imagens/linkedin-in-brands.svg" alt="LinkedIn">  
+                    </a>
+                </div>
+
+                
+            </section>
     </main>
+    
     <script src="script.js"></script>
 </body>
 </html>
