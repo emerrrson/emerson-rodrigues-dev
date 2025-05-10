@@ -5,39 +5,41 @@ html {
   }
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #0a0f1e;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0a0f1e;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 
 header {
-    background: linear-gradient(90deg, #0a0f1e, #162447);
-    padding: 25px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    z-index: 1000;
+  background: linear-gradient(90deg, #0a0f1e, #162447);
+  padding: 25px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
 }
 
 nav ul li {
     margin: 0 20px;
+    margin: 0.5rem 0.8rem; /* ajusta espaçamento para não somar demais */
+
 }
 
 nav ul li a {
@@ -54,6 +56,8 @@ nav ul li a:hover {
 }
 
 main {
+
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -416,7 +420,112 @@ main {
 }
 
 
-
 .redes-sociais a  img {
   width: 120px;
 }
+
+.imagem-dinamica-responsiva {
+  display: none;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+  header {
+    position: fixed;
+  }
+
+ body {
+    margin: 0;
+    box-sizing: border-box;
+ }
+
+nav {
+  display: flex;
+  padding-left: 10px;
+}
+
+.secao-animada .container {
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.home {
+  display: flex;
+}
+
+.texto-home {
+  padding-left: 35px;
+}
+
+.imagem-dinamica {
+  display: none;
+}
+
+.tecnologias {
+  padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content:space-between
+}
+
+.imagem-dinamica-responsiva {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+    object-fit: cover;
+    border: 3px solid #00bcd4;
+    flex-shrink: 0;
+    animation: pulsarBorda 2s infinite ease-in-out;
+    z-index: 1;
+    margin-left: 70px;
+}
+
+
+.sobre-mim h2 {
+  margin: 35px;
+  margin-bottom: 0;
+}
+
+.sobre-mim p {
+  font-size: 15px;
+  margin: 32px;
+  
+}
+
+.foto-sobre img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+    object-fit: cover;
+    border: 3px solid #00bcd4;
+    flex-shrink: 0;
+    animation: pulsarBorda 2s infinite ease-in-out;
+    z-index: 1;
+    
+}
+
+.redes-sociais {
+  font-family: 'Rajdhani', sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 80px;
+  
+}
+
+.redes-sociais a  img {
+  width: 50px;
+  padding-top: 40px;
+}
+
+}
+

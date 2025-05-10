@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
     <title>Meu Portfólio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="style.css">
@@ -12,19 +12,24 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
+        <div class="container">
+            <nav>
+             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#sobre-mim">Sobre Mim</a></li>
                 <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
-        </nav>
+            </nav>
+        </div>
     </header>
     
     <main>
         <section id="home" class="secao-animada">
+            <div class="container">
             <div class="texto-home">
+                <img src="imagens/emerson-3.png" alt="Foto de Emerson" class="imagem-dinamica-responsiva" id="imagemDinamica">
+
                 <h2>Olá, Eu sou o Emerson</h2>
                 <p>Sou um desenvolvedor apaixonado por tecnologia e criação de interfaces interativas. Sempre buscando aprender e evoluir.</p>
                 <p>Tecnologias que utilizo: </p>
@@ -36,10 +41,11 @@
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React">
                 </div>
             </div>
+            </div>
             <img src="imagens/emerson-3.png" alt="Foto de Emerson" class="imagem-dinamica" id="imagemDinamica">
-            
         </section>
         <section id="sobre-mim" class="sobre-mim secao-animada">
+            <div class="container">
             <h2> Sobre Mim </h2>
             <div class="container-sobre">
                 <div class="bio">
@@ -57,6 +63,7 @@
                 <div class="foto-sobre">
                     <img src="imagens/emerson-1.png" alt="Foto Emerson desenho animado" class="imagem-sobre">
                 </div>
+            </div>
             </div>
             </section>
 
