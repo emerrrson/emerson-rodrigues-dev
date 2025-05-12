@@ -443,7 +443,7 @@ main {
 
 nav {
   display: flex;
-  padding-left: 10px;
+  padding-left: 8px;
 }
 
 .secao-animada .container {
@@ -485,7 +485,7 @@ nav {
     flex-shrink: 0;
     animation: pulsarBorda 2s infinite ease-in-out;
     z-index: 1;
-    margin-left: 70px;
+    margin-left: 90px;
 }
 
 
