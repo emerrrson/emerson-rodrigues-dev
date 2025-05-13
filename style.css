@@ -563,13 +563,13 @@ main {
 .sobre-mim h2 {
   margin: 35px;
   margin-bottom: 0;
-  margin-left: 60px;
+  justify-content: center;
 }
 
 .sobre-mim p {
   font-size: 15px;
   margin: 32px;
-  margin-left: 60px;
+  justify-content: center;
   
 }
 
@@ -583,7 +583,7 @@ main {
     flex-shrink: 0;
     animation: pulsarBorda 2s infinite ease-in-out;
     z-index: 1;
-    margin-left: 50px;
+    justify-content: center;
     
 }
 
@@ -604,7 +604,7 @@ main {
 .projetos  {
   display: flex;
   flex-direction: column;
-  padding-left: 50px;
+  justify-content: center;
 }
 
 
