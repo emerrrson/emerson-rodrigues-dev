@@ -93,8 +93,13 @@ main {
     margin-bottom: 0;
 }
 
-.texto-home {
-    margin-right: 40px;
+.secao-animada .container-home {
+  justify-content: center;
+}
+
+.texto-home p {
+  justify-content: center;
+  text-align: justify;
 }
 
 
@@ -104,12 +109,15 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    justify-content: center;
     padding: 80px 20px;
     gap: 40px;
     max-width: 900px;
     width: 100%;
     scroll-margin-top: 100px;
 }
+
+
 
 #home h2 {
     font-size: 32px;
