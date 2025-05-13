@@ -72,35 +72,19 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-    const botaoMais = document.getElementById('botaoMais');
-    const todosOsCards = document.querySelectorAll('.card');
-    
-    const cardsVisiveisInicialmente = 3;
-  
-    // Verifica quantos cards tem
-    if (todosOsCards.length <= cardsVisiveisInicialmente) {
-      botaoMais.style.display = 'none';
-    }
-  
-    // Deixa apenas os 3 primeiros visíveis
-    todosOsCards.forEach((card, index) => {
-      if (index < cardsVisiveisInicialmente) {
-        card.classList.remove('hidden');
-      } else {
-        card.classList.add('hidden');
-      }
-    });
-  
-    botaoMais.addEventListener('click', () => {
-      const projetosOcultos = document.querySelectorAll('.card.hidden');
-  
-      for (let i = 0; i < 3 && i < projetosOcultos.length; i++) {
-        projetosOcultos[i].classList.remove('hidden');
-      }
-  
-      if (document.querySelectorAll('.card.hidden').length === 0) {
-        botaoMais.style.display = 'none';
-      }
-    });
-  });
+
+const botaoResidentEvil = document.getElementById('site-resident-evil');
+
+botaoResidentEvil.addEventListener('click', function (e) {
+  e.preventDefault();
+  alert("Site em desenvolvimento");
+
+
+})
+
+const botaoGithub = document.getElementById('meu-github');
+
+botaoGithub.addEventListener('click', function (e) {
+  e.preventDefault();
+  alert("Ainda não subi esse projeto para o Github, segura aí!");
+})
