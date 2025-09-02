@@ -80,8 +80,6 @@ nav .nav-list li a:hover {
 }
 
 main {
-
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -224,7 +222,8 @@ main {
     align-items: center;
     justify-content: center;
     padding: 80px 20px;
-    background-color: #0a0f1f;
+      width: 100vw;
+  background-color: #162447;
     color: #fff;
     scroll-margin-top: 10px;
   }
@@ -595,24 +594,12 @@ main {
     
 }
 
-.redes-sociais {
-  font-family: 'Rajdhani', sans-serif;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding-bottom: 80px;
-  
-}
-
-.redes-sociais a  img {
-  width: 50px;
-  padding-top: 40px;
-}
 
 .projetos  {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
 }
 
 
@@ -658,6 +645,105 @@ main {
  
 }
 
-
 }
+
+.caroussel-section {
+  width: 100vw;
+  background-color: #162447;
+}
+
+.carousel {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  margin: 0 auto;
+  perspective: 1000px;
+}
+
+.carousel-item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: scale(1.5) rotateY(0deg);
+  transition: transform 0.6s, opacity 0.2s;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.carousel-item.active {
+  opacity: 1;
+  transform: scale(1) translateZ(50px);
+  z-index: 2;
+}
+
+.carousel-item.prev {
+  opacity: 0.6;
+  transform: scale(0.9) translateX(-120px) rotateY(20deg);
+  z-index: 1;
+}
+
+.carousel-item.next {
+  opacity: 0.6;
+  transform: scale(0.9) translateX(120px) rotateY(-20deg);
+  z-index: 1;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.carousel-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 20px;
+}
+
+.carousel-buttons button {
+  background: #00f7ff85;
+  border: none;
+  padding: 10px 16px;
+  font-size: 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+  margin-bottom: 32px;
+}
+
+.carousel-buttons button:hover {
+  background: #00c3cc;
+  transform: scale(1.1);
+}
+
+.caroussel-section h2 {
+  padding-bottom: 42px;
+    font-size: 32px;
+    text-align: center;
+    white-space: nowrap;
+    animation: brilhoTexto 2s infinite ease-in-out;
+    font-family: 'Rajdhani', sans-serif;
+    
+}
+
+.contato p {
+      font-family: 'Rajdhani', sans-serif;
+}
+
+.redes-sociais {
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  
+}
+
+.redes-sociais a img {
+  width: 50px;
+  padding-top: 40px;
+}
+
+
 
