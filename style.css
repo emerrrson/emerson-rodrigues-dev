@@ -37,24 +37,35 @@ body {
 
 header {
   background: linear-gradient(90deg, #0a0f1e, #162447);
-  padding: 25px 0;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
   z-index: 1000;
+
+  box-sizing: border-box;
+  padding: 18px 10px;
+  overflow: hidden;
 }
 
 
+nav {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
 nav .nav-list {
-  gap: 10px;
-  list-style: none;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
   padding: 0;
   margin: 0;
-  flex-wrap: nowrap;
+  list-style: none;
 }
 
 
@@ -283,7 +294,7 @@ main {
   }
 
   .projetos {
-    padding: 40px 20px;
+    padding: 20px 10px;
     background-color: #0a0f1f;
     color: #fff;
     text-align: center;
@@ -314,16 +325,15 @@ main {
   }
 
   .card {
-    width: 100%;
-    height: 100%;
+   width: 280px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* distribui o espaço entre conteúdo e botões */
-  padding: 20px;
+  justify-content: space-between;
+  padding: 16px;
   border-radius: 10px;
   background-color: #0e1628;
   box-shadow: 0 0 10px cyan;
-  flex: 1; /* todos os cards crescem igualmente */
+  flex: none;
   }
 
   .card:hover {
@@ -333,23 +343,24 @@ main {
 
   .card img {
     width: 100%;
-    height: 180px;
+    height: 130px;
     border-radius: 10px;
     object-fit: cover;
-    margin-bottom: 15px;
+    
   }
 
   .card h3 {
     font-family: 'Rajdhani', sans-serif;
     font-size: 24px;
     color: #00bcd4;
-    margin-bottom: 10px;
+    margin: 0;
+  
   }
 
   .card p {
     font-size: 16px;
     color: #ccc;
-    margin-bottom: 20px;
+    margin: 0;
     font-family: 'Rajdhani', sans-serif;
   }
 
@@ -358,13 +369,15 @@ main {
     display: flex;
     justify-content: space-between;
     font-family: 'Rajdhani', sans-serif;
-    gap: 10px;
+    gap: 4px;
+    margin: 0;
+    padding: 0;
     
   }
 
   .botoes a {
     text-decoration: none;
-    padding: 22px 42px;
+    padding: 14px 28px;
     background-color: rgba(0, 188, 212, 0.1);
     color: #fff;
     border-radius: 8px;
@@ -459,299 +472,233 @@ main {
 
 
 .redes-sociais a  img {
-  width: 120px;
+  width: 30px;
 }
 
 .imagem-dinamica-responsiva {
   display: none;
 }
 
-
-
-
-
-@media screen and (max-width: 768px) {
-
-
-  header {
-    position: fixed;
-  }
-
-  main {
-    width: 100%;
-  }
-
- body {
-    margin: 0;
-    box-sizing: border-box;
- }
-
-   .nav-container {
-    flex-direction: column;
-    align-items: center;
-    
-
-  }
-
-  .nav-container a {
-    margin-bottom: 10px;
-  }
-
-
- nav {
-  padding: 0 2rem;
- }
-
-  .nav-list {
-    display: flex;
-    flex-direction: row;
-    overflow-x: auto;
-    white-space: wrap;
-    gap: 20px;
-    list-style: none;
-    justify-content: flex-start;
-    scrollbar-width: none; /* Firefox */
-    
-  }
-
-  .nav-list::-webkit-scrollbar {
-    display: none; /* Chrome/Safari */
-  }
-
-  .nav-list li {
-    flex: 0 0 auto;
-  }
-
-  .nav-list li a {
-    color: cyan;
-    text-decoration: none;
-    font-size: 14px;
-  }
-
-.secao-animada .container {
-  display: flex;
-  flex-direction: column;
- 
-}
-
-.home {
-  display: flex;
-}
-
-
-.imagem-dinamica {
-  display: none;
-}
-
-.tecnologias {
-  padding-top: 30px;
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-    margin-top: 20px;
-    flex-wrap: wrap;
-    justify-content:space-between
-}
-
-.imagem-dinamica-responsiva {
-    display: flex;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    transition: transform 0.3s ease-in-out;
-    object-fit: cover;
-    border: 3px solid #00bcd4;
-    flex-shrink: 0;
-    animation: pulsarBorda 2s infinite ease-in-out;
-    z-index: 1;
-     margin-left: 160px;
-}
-
-
-.sobre-mim h2 {
-  margin: 35px;
-  margin-bottom: 0;
-  justify-content: center;
-}
-
-.sobre-mim p {
-  font-size: 15px;
-  margin: 32px;
-  justify-content: center;
-  
-}
-
-.foto-sobre img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    transition: transform 0.3s ease-in-out;
-    object-fit: cover;
-    border: 3px solid #00bcd4;
-    flex-shrink: 0;
-    animation: pulsarBorda 2s infinite ease-in-out;
-    z-index: 1;
-    justify-content: center;
-    
-}
-
-
-.projetos  {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-}
-
-
-
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  nav {
-  display: flex;
-  justify-content: center;
-  
-  
-}
-
-
-.imagem-dinamica-responsiva {
-    width: 450px;
-    height: 450px;
-    border-radius: 50%;
-    transition: transform 0.3s ease-in-out;
-    object-fit: cover;
-    border: 3px solid #00bcd4;
-    flex-shrink: 0;
-    animation: pulsarBorda 2s infinite ease-in-out;
-    z-index: 1;
-}
-
-.container-home {
-      display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 60px;
-    max-width: 1100px;
-    width: 100%;
-    flex-wrap: wrap;
-}
-
-
-
-.secao-animada .texto-home{
-  text-align: justify;
-  margin: 0;
- 
-}
-
-}
+/* ---------- CARROSSEL - substitua o bloco antigo ---------- */
 
 .caroussel-section {
-  width: 100vw;
+  width: 100%;
   background-color: #162447;
+  padding: 40px 20px;
+  box-sizing: border-box;
 }
 
 .carousel {
   position: relative;
-  width: 500px;
-  height: 250px;
+  width: 100%;
+  max-width: 900px;      /* limite para desktop */
   margin: 0 auto;
-  perspective: 1000px;
+  aspect-ratio: 16 / 9;  /* mantém proporção responsiva */
+  overflow: hidden;
+  border-radius: 12px;
+  background: #0e1628;
 }
 
 .carousel-item {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  inset: 0;               /* equivale a top/right/bottom/left: 0 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   opacity: 0;
-  transform: scale(1.5) rotateY(0deg);
-  transition: transform 0.6s, opacity 0.2s;
-  border-radius: 15px;
-  overflow: hidden;
+  transform: scale(0.95);
+  transition: transform 0.6s ease, opacity 0.4s ease;
+  pointer-events: none;
 }
 
 .carousel-item.active {
   opacity: 1;
-  transform: scale(1) translateZ(50px);
+  transform: translateZ(0) scale(1);
   z-index: 2;
+  pointer-events: auto;
 }
 
-.carousel-item.prev {
-  opacity: 0.6;
-  transform: scale(0.9) translateX(-120px) rotateY(20deg);
-  z-index: 1;
-}
-
+.carousel-item.prev,
 .carousel-item.next {
   opacity: 0.6;
-  transform: scale(0.9) translateX(120px) rotateY(-20deg);
+  transform: scale(0.9);
   z-index: 1;
+  pointer-events: none;
 }
 
+/* imagens: respeitar container, manter proporção */
 .carousel-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  border-radius: 15px;
+  object-fit: cover;  /* corta mantendo proporção */
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
 }
 
+/* botões */
 .carousel-buttons {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
-  gap: 20px;
+  gap: 16px;
+  margin-top: 18px;
 }
 
 .carousel-buttons button {
   background: #00f7ff85;
   border: none;
-  padding: 10px 16px;
-  font-size: 1.5rem;
+  padding: 10px 14px;
+  font-size: 1.2rem;
   border-radius: 8px;
   cursor: pointer;
-  transition: transform 0.2s, background 0.3s;
-  margin-bottom: 32px;
 }
 
-.carousel-buttons button:hover {
-  background: #00c3cc;
-  transform: scale(1.1);
+/* ajustes mobile */
+@media (max-width: 600px) {
+  .carousel { max-width: 420px; aspect-ratio: 4/3; }
+  .carousel-buttons button { padding: 8px 12px; font-size: 1rem; }
 }
 
-.caroussel-section h2 {
-  padding-bottom: 42px;
-    font-size: 32px;
+
+
+
+
+/* ===================================================== */
+/* RESPONSIVIDADE - AJUSTES PARA CELULAR (ATÉ 768px)     */
+/* ===================================================== */
+
+@media screen and (max-width: 768px) {
+
+
+  /* HOME */
+  #home {
+    flex-direction: column;
+    height: auto;
+    padding-top: 140px; /* compensar header fixo */
+    padding-bottom: 60px;
+    gap: 20px;
+  }
+
+  .imagem-dinamica {
+    display: none; /* some a grande */
+  }
+
+.imagem-dinamica-responsiva {
+  display: block;
+  width: 220px;     /* tamanho ideal */
+  height: 220px;
+  margin: 0 auto;   /* CENTRALIZA */
+  border-radius: 50%;
+  object-fit: cover;
+  animation: pulsarBorda 2s infinite ease-in-out;
+}
+
+  #home h2 {
+    font-size: 24px;
+    white-space: normal;
+  }
+
+  #home p {
+    font-size: 16px;
     text-align: center;
-    white-space: nowrap;
-    animation: brilhoTexto 2s infinite ease-in-out;
-    font-family: 'Rajdhani', sans-serif;
-    
+  }
+
+  .tecnologias {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  /* SOBRE MIM */
+  .sobre-mim {
+    height: auto;
+    padding-top: 120px;
+    padding-bottom: 80px;
+  }
+
+  .container-sobre {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .foto-sobre img {
+    width: 260px;
+    height: 260px;
+  }
+
+  .bio {
+    max-width: 90%;
+  }
+
+  .bio p {
+    text-align: justify;
+  }
+
+  /* PROJETOS */
+  .container-cards {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cards-projetos {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 330px;
+    margin: auto;
+  }
+
+ 
+
+  /* BOTÕES */
+  .botoes {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .botoes a {
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+  }
+
+  /* CARROSSEL */
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.contato {
-  padding: 60px 20px;
-  width: 100vw;
-  margin-bottom: 0;
+  .carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* CONTATO */
+  .redes-sociais {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .redes-sociais a img {
+    padding-top: 50px;
+    width: 80px;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+  }
+
+  .tecnologias-usadas img{
+    width: 30px;
+    height: 30px;
+  }
+
+
 }
-
-.contato p {
-      font-family: 'Rajdhani', sans-serif;
-}
-
-.redes-sociais {
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  
-}
-
-.redes-sociais a img {
-  width: 50px;
-  padding-top: 40px;
-}
-
-
 
