@@ -73,21 +73,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-const botaoResidentEvil = document.getElementById('site-resident-evil');
-
-botaoResidentEvil.addEventListener('click', function (e) {
-  e.preventDefault();
-  alert("Site em desenvolvimento");
-
-
-})
-
-const botaoGithub = document.getElementById('meu-github');
-
-botaoGithub.addEventListener('click', function (e) {
-  e.preventDefault();
-  alert("Ainda não subi esse projeto para o Github, segura aí!");
-})
 
 
 const items = document.querySelectorAll(".carousel-item");
@@ -120,6 +105,3 @@ document.getElementById("next").addEventListener("click", () => {
 // Inicializa
 updateCarousel();
 
-document.getElementById("re-site").addEventListener("click", () => {
-  alert("Em breve")
-})
