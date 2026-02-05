@@ -58,40 +58,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
     secoes.forEach(secao => observer.observe(secao));
 
-    /* ===========================================================
-       CARROSSEL
-    ============================================================ */
-    const items = document.querySelectorAll(".carousel-item");
-    let current = 0;
-
-    const updateCarousel = () => {
-        items.forEach((item, index) => {
-            item.classList.remove("active", "prev", "next");
-
-            if (index === current) {
-                item.classList.add("active");
-            } else if (index === (current - 1 + items.length) % items.length) {
-                item.classList.add("prev");
-            } else if (index === (current + 1) % items.length) {
-                item.classList.add("next");
-            }
-        });
-    };
-
-    const btnPrev = document.getElementById("prev");
-    const btnNext = document.getElementById("next");
-
-    if (btnPrev && btnNext) {
-        btnPrev.addEventListener("click", () => {
-            current = (current - 1 + items.length) % items.length;
-            updateCarousel();
-        });
-
-        btnNext.addEventListener("click", () => {
-            current = (current + 1) % items.length;
-            updateCarousel();
-        });
-    }
-
     updateCarousel(); // inicializa
 });
